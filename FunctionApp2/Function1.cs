@@ -12,7 +12,7 @@ namespace FunctionApp2
     public static class Function1
     {
         [FunctionName("Function1")]
-        public static async Task Run([EventHubTrigger("samples-workitems", Connection = "eventHubConnectionString")] EventData[] events, ILogger log)
+        public static async Task Run([EventHubTrigger("netsurioneh", Connection = "eventHubConnectionString")] EventData[] events, ILogger log)
         {
             var exceptions = new List<Exception>();
 
